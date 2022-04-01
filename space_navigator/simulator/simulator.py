@@ -126,8 +126,8 @@ class Visualizer:
 
     def plot_planet(self, satellite, t, size, color):
         """ Plot a pykep.planet object. """
-        plot_planet(satellite, ax=self.subplot_3d,
-                    t0=t, s=size, legend=True, color=color)
+        plot_planet(satellite, axes=self.subplot_3d,
+                    t0=t, s=size, legend=(True, True), color=color)
 
     def plot_earth(self):
         """ Add earth to the plot and legend. """
